@@ -1,0 +1,20 @@
+{
+  "run_name": "synthetic-health-texts",
+  "output_root": "outputs",
+  "providers": {
+    "active": "azure",
+    "azure": {
+      "deployment": "YOUR_AZURE_DEPLOYMENT_NAME",
+      "endpoint_env": "AZURE_OPENAI_ENDPOINT",
+      "api_key_env": "AZURE_OPENAI_API_KEY",
+      "api_version_env": "AZURE_OPENAI_API_VERSION"
+    }
+  },
+  "generation": {
+    "documents_per_genre": 10,
+    "human_review_sample_size_per_group": 5
+  },
+  "quality": {
+    "reference_glob_template": ""
+  }
+}
